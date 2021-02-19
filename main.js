@@ -7,3 +7,5 @@ toggleCollapse.onclick = (e) => {
     nav.classList.toggle("collapse");
     e.target.classList.toggle("toggle-click");
 }
+
+
