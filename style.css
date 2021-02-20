@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=roboto+Deca|roboto:400,600&display=swap');
+
 
 
 :root{
@@ -7,7 +7,7 @@
     --bg-color: #0f0f0f;
 
     /*  theme font-family */
-    --roboto: 'Roboto', sans-serif;
+    --lato: 'Lato', sans-serif;
    
 
     /* gradient colors */
@@ -51,11 +51,13 @@ nav{
 
 }
 
-nav .nav-brand a{
+nav .nav-brand a img{
+    position: absolute;
     display: block;
-    padding: 1rem 0;
-    font-family: var(--roboto);
-    font-size: 1.6rem;
+    width: 15rem;
+    bottom: 0;
+    left: 0;
+    
 }
 
 nav .nav-items{
@@ -64,28 +66,27 @@ nav .nav-items{
 }
 
 nav .nav-items .nav-link{
-    padding: 1.5rem 2rem;
-    font-family: var(--roboto);
+    padding: 1.6rem 2rem;
+    font-family: var(--lato);
     text-transform: uppercase;
     letter-spacing: .8px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.1rem;
+
 }
 
-nav .nav-items .nav-link:hover{
-    background: var(--bg-color);
-}
+
 
 nav .nav-items .nav-link:hover a{
     color: white;
 }
 
 nav .social {
-    padding: 1.4rem 0;
+    padding: 1.3rem 0;
 }
 
-nav .social i{
-    padding: 0 .2rem;
+nav .social img{
+    padding: 0 1rem;
 }
 
 nav .toggle-collapse{
@@ -114,7 +115,7 @@ nav .toggle-collapse .toggle-icons i{
 .icon, .icon::before, .icon::after{
     position: relative;
     width: 10px;
-    border: 2px solid var(--text-gray);
+    border: 2px solid white;
     border-radius: 3rem;
     display: inline-block;
     transition: all .8s ease;
@@ -149,10 +150,19 @@ nav .toggle-collapse .toggle-icons i{
 @media only screen and (max-width: 800px){
     nav .nav-items{
         flex-direction: column;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    nav .nav-items .nav-link:hover{
+        text-decoration: underline;
     }
     nav{
         flex-direction: column !important;
         display: block !important;
+    }
+
+    nav .social {
+        text-align: center;
     }
 
     nav .toggle-collapse{
@@ -165,6 +175,7 @@ nav .toggle-collapse .toggle-icons i{
 
 .home {
     height: 100vh;
+    
 }
 .about-me {
     height: 100vh;
