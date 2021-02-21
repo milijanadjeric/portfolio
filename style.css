@@ -116,7 +116,7 @@ nav .toggle-collapse .toggle-icons i{
 /* creating own toggle icons  */
 .icon, .icon::before, .icon::after{
     position: relative;
-    width: 10px;
+    width: 20px;
     border: 2px solid white;
     border-radius: 3rem;
     display: inline-block;
@@ -128,7 +128,7 @@ nav .toggle-collapse .toggle-icons i{
     content: " ";
     position: absolute;
     top: 5px;
-    width: 20px;
+    width: 30px;
     left: -12px;
 }
 
@@ -140,7 +140,7 @@ nav .toggle-collapse .toggle-icons i{
 }
 
 .toggle-click, .toggle-click::before, .toggle-click::after{
-    width: 20px;
+    width: 30px;
 }
 
 .toggle-click::before{
