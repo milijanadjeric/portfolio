@@ -118,6 +118,7 @@ nav .toggle-collapse .toggle-icons i{
     position: relative;
     width: 20px;
     border: 2px solid white;
+    background-color: #772f83;
     border-radius: 3rem;
     display: inline-block;
     transition: all .8s ease;
