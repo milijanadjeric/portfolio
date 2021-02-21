@@ -11,7 +11,9 @@
    
 
     /* gradient colors */
-    --sky :  linear-gradient(to right,   #006c8d, #009aa9, #00c9b7);
+    --sky :  linear-gradient(to right,   #772f83 30%, #009aa9 100%);
+    --sky-2 :  linear-gradient(to right top,   #772f83 30%, #009aa9 100%);
+
     --sky-footer: linear-gradient(to bottom, #00c9b7, #009aa9, #006c8d );
 }
 
@@ -148,10 +150,13 @@ nav .toggle-collapse .toggle-icons i{
 
 
 @media only screen and (max-width: 800px){
+    nav {
+        background: var(--sky-2);
+    }
     nav .nav-items{
         flex-direction: column;
         margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
     nav .nav-items .nav-link:hover{
         text-decoration: underline;
