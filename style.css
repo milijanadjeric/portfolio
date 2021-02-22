@@ -12,8 +12,8 @@
    
 
     /* gradient colors */
-    --sky :  linear-gradient(to right,   #772f83 30%, #009aa9 100%);
-    --sky-2 :  linear-gradient(to right top,   #772f83 30%, #009aa9 100%);
+    --sky :  #772f83;
+    --sky-2 :  linear-gradient(to right top,   #772f83 30%, #762f839c 100%);
 
     --sky-footer: linear-gradient(to bottom, #00c9b7, #009aa9, #006c8d );
 }
@@ -31,7 +31,7 @@ a{
 }
 
 .text-white{
-    color: black;
+    color: #eedaf1;
     ;
 }
 
@@ -50,8 +50,9 @@ nav{
     min-height: 10vh;
     overflow-y: hidden;
     transition: height 1s cubic-bezier(0.26, -0.01, 0,  1.01);
-    border-bottom: 1px solid black;
     box-shadow: 0 4px 18px black;
+    z-index: 999;
+    
     
 
 }
@@ -77,13 +78,14 @@ nav .nav-items .nav-link{
     letter-spacing: .8px;
     font-weight: 500;
     font-size: 1.1rem;
+    
 
 }
 
 
 
 nav .nav-items .nav-link:hover a{
-    color: white;
+    color: #ddb4e4;
 }
 
 nav .social {
@@ -98,7 +100,7 @@ nav .social svg{
 #github:hover,
 #facebook:hover
  {
-    fill: white;
+    fill:#ddb4e4;
     
 }
 
@@ -192,15 +194,53 @@ nav .toggle-collapse .toggle-icons i{
 /* ------------------ home ----------------- */
 
 .home {
-    height: 100vh;  
+    height: 90vh;  
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: black;
 }
-.home-animation {
-    margin-right: 10rem;
+.home::before {
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 100%;
+    background:  #762f832d;
+    top: 0;
+    right: 10%;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+    transform: skewX(20deg); }
+    
+    @media only screen and (max-width: 1440px) {
+      .home::before {
+        right: 11%; } }
+    @media only screen and (max-width: 1366px) {
+      .home::before {
+        right: 12%; } }
+    @media only screen and (max-width: 1280px) {
+      .home::before {
+        right: 13%; } }
+    @media only screen and (max-width: 1024px) {
+      .home::before {
+        width: 41%;
+        right: 15%; 
+    } }
+    @media only screen and (max-width: 800px) {
+        .home::before {
+            display: none;
+
+    }}
     
     
+    
+
+
+.home-hero {
+    margin-right: 10rem;  
+    align-self: flex-end;
 }
 
 @media only screen and (max-width: 800px) {
@@ -209,13 +249,13 @@ nav .toggle-collapse .toggle-icons i{
         justify-content: center;
         align-items: center;
     }
-    .home-animation {
+    .home-hero {
         margin-right: 0;
     }
 }
 
 @media only screen and (max-width: 415px) {
-    .home-animation {
+    .home-hero {
         width: 320px;
         height: 320px;
         margin-top: -350px;
