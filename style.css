@@ -236,7 +236,7 @@
 
 
 body {
-  background-color: hsla(0, 0%, 0%, 0.940);
+  background-color: hsla(0, 0%, 0%, 0.950);
   
 }
 
@@ -250,7 +250,7 @@ body {
   overflow: hidden;
   border-radius: 40px;
   box-shadow: 0 15px 11px 0 rgba(0, 0, 0, 0.7), 20px 20px 24px 0 rgba(0, 0, 0, 0.7);
-  border: 1px solid #b7935075;
+  border: 1px solid #b7935044;
   
 }
 
