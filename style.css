@@ -98,9 +98,7 @@
   border-radius: 50%;
   transition: background-color 0.15s linear;
 }
-.nav__toggle:hover, .nav__toggle:focus {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
 .nav__menu {
   width: 100vw;
   display: flex;
@@ -132,7 +130,7 @@
   transform: translateY(-200px);
 }
 .nav__link {
-  border: 1px solid rgba(255, 255, 255, 0.212);
+  border: 1px solid #b7935057;
   border-radius: 200px;
   color: orange;
   display: block;
@@ -279,6 +277,7 @@ body {
 
 @media only screen and (max-width: 415px) {
 
+  
   .home {
     height: 100%;
     flex-direction: column-reverse;
