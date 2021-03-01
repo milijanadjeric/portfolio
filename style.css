@@ -12,13 +12,13 @@
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  padding-top: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
 }
 .nav__menu {
   display: flex;
   align-items: center;
-  margin-left: 12em;
+  margin-left: 16rem;
   z-index: 999;
   
 }
@@ -31,8 +31,8 @@
   letter-spacing: .8px;
   font-weight: 300;
   font-size: 14px;
-  color: orange;
-  border: 1px solid rgba(255, 255, 255, 0.212);
+  color: #00C9B7;
+  border: 1px solid #b7935057;
   border-radius: 200px;
   
 }
@@ -130,10 +130,11 @@
   transform: translateY(-200px);
 }
 .nav__link {
-  border: 1px solid #b7935094;
+  
   border-radius: 200px;
-  color: orange;
   display: block;
+  color: #00C9B7;
+  border: 1px solid #b7935057;
   text-align: center;
   font-size: 1.25rem;
   text-decoration: none;
@@ -253,7 +254,7 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 40px;
-  box-shadow: 0 15px 11px 0 rgba(0, 0, 0, 0.7), 20px 20px 24px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 11px 0 rgba(0, 0, 0, 0.4), 20px 20px 24px 0 rgba(0, 0, 0, 0.4);
   border: 1px solid #b7935057;
   
 }
@@ -264,51 +265,21 @@ body {
 /* ------------------ home ----------------- */
 
 .home {
-  height: 100vh;  
+  
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color:black;
   
-}
-.home-hero {
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 415px) {
-
-  
-  .home {
-    height: 100%;
-    flex-direction: column-reverse;
-  }
-  
-  .home-hero {
-      width: 320px;
-      height: 300px;
-      margin-top: 0;
-      margin-right: 0;
-      
-      
-  }
-  .home-text-box {
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio-animation {
-    width: 350px;
-  }
-
 }
 
 .home-text-box {
   display: flex;
   flex-direction: column;
-  margin-top: -2rem;
+  
 }
 .home-text {
-  color: wheat;
+  color: #00C9B7;
   font-size: 2rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -316,21 +287,54 @@ body {
   
 }
 .home-text-big {
-  color: wheat;
+  color: #00C9B7;
   font-size: 4rem;
   font-family: var(--lato);
   font-weight: 300;
   margin: 0;
-  text-align: center;
+  
 
 }
 
+.portfolio-animation {
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 415px) {
+
+  
+  .home {
+    
+    flex-direction: column-reverse;
+  }
+  
+
+  .home-text-box {
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .home-text-big {
+    padding-bottom: 110px;
+    text-align: center;
+  }
+  .portfolio-animation {
+    width: 320px;
+    height: 320px;
+    margin-top: 0;
+    
+  }
+
+}
+
+
+
 .home-buttons {
-  width: 21rem;
+  width: 10rem;
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
-  margin-top: 5rem;
+  align-self: center;
+  margin-top: 4rem;
   
 }
 
@@ -342,17 +346,13 @@ body {
   font-size: 14px;
   letter-spacing: .5px;
   background:black;
-  color: #b79350;
+  color: #00C9B7;
   border-radius: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.212);
-}
-.home-buttons a {
-  padding: 12px 50px;
-  text-decoration: none;
+  border: 1px solid #b7935057;
 }
 
-.home-buttons button:hover,
-.home-buttons a:hover {
+
+.home-buttons button:hover{
   cursor: pointer;
   background: linear-gradient(to right,#b34cc575,  #762f83ab);
   color: #ecd7f0;
@@ -371,7 +371,7 @@ body {
 /* ------------------ animation ----------------- */  
 
 
-#Vector_87, #Vector_88, #Vector_89, #Vector_90, #Vector_91, #Vector_92, #Vector_93, #Vector_94, #Vector_95, #Vector_96,#Vector_97, #Vector_98, 
+#Vector_90, #Vector_91, #Vector_92, #Vector_93, #Vector_97, #Vector_98, 
 #Vector_99, #Vector_100, #Vector_101, #Vector_102, #Vector_103 {
   animation-name: stars;
   animation-duration: 1s;
@@ -379,6 +379,32 @@ body {
 }
 
 @keyframes stars {
-  from {fill: yellow;}
+  from {fill: #b79350;}
   to {fill: black;}
-  }
+}
+
+
+#Vector-3, #Vector-4, #Vector-5, #Vector-6 {
+  animation-name: biggest-stars;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes biggest-stars {
+  from {fill: #b79350;}
+  to {fill: black;}
+}
+
+#Vector_87, #Vector_88, #Vector_89, #Vector_94, #Vector_95, #Vector_96 {
+  animation-name: big-stars;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+
+}
+@keyframes big-stars {
+  from {fill: #b79350;}
+  to {fill: black;}
+}
+
