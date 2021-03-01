@@ -174,6 +174,7 @@
   right: 40px;
   width: 1px;
   height: 1px;
+  
 }
 .splash::after {
   content: "";
@@ -295,6 +296,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .portfolio-animation {
+    width: 350px;
+  }
 
 }
 
@@ -362,3 +366,19 @@ body {
 .about-me {
   height: 90vh;
 }
+/* ------------------ about me end ----------------- */  
+
+/* ------------------ animation ----------------- */  
+
+
+#Vector_87, #Vector_88, #Vector_89, #Vector_90, #Vector_91, #Vector_92, #Vector_93, #Vector_94, #Vector_95, #Vector_96,#Vector_97, #Vector_98, 
+#Vector_99, #Vector_100, #Vector_101, #Vector_102, #Vector_103 {
+  animation-name: stars;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stars {
+  from {fill: yellow;}
+  to {fill: black;}
+  }
