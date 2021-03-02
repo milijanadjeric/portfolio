@@ -150,7 +150,7 @@
 .menuicon {
   display: block;
   cursor: pointer;
-  color: #b7935086;
+  color: #b79350;
   transform: rotate(0deg);
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -197,7 +197,7 @@
 }
 .nav:target .menuicon,
 .nav--open .menuicon {
-  color: #b7935086;
+  color: #b79350;
   transform: rotate(180deg);
 }
 .nav:target .menuicon__circle,
