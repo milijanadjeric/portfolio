@@ -90,13 +90,13 @@
   z-index: 10;
   padding: 0;
   border: 0;
-  background: transparent;
+  background: black;
   outline: 0;
   right: 15px;
   top: 15px;
   cursor: pointer;
   border-radius: 50%;
-  transition: background-color 0.15s linear;
+  transition: black 0.15s linear;
 }
 
 .nav__menu {
@@ -109,6 +109,7 @@
   z-index: 5;
   visibility: hidden;
   margin-left: 0;
+  border: 1px solid #b7935098;
 }
 .nav__item {
   opacity: 0;
@@ -149,7 +150,7 @@
 .menuicon {
   display: block;
   cursor: pointer;
-  color: orange;
+  color: #b7935086;
   transform: rotate(0deg);
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -164,11 +165,7 @@
   transform-origin: 50% 50%;
   transition: transform 0.25s ease-in-out;
 }
-.menuicon__circle {
-  transition: stroke-dashoffset 0.3s linear 0.1s;
-  stroke-dashoffset: 144.513262038;
-  stroke-dasharray: 144.513262038;
-}
+
 
 .splash {
   position: absolute;
@@ -200,7 +197,7 @@
 }
 .nav:target .menuicon,
 .nav--open .menuicon {
-  color: orange;
+  color: #b7935086;
   transform: rotate(180deg);
 }
 .nav:target .menuicon__circle,
