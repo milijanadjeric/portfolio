@@ -99,7 +99,7 @@ a {
   right: 15px;
   top: 15px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 0%;
   transition: black 0.15s linear;
 }
 
@@ -184,7 +184,6 @@ a {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 50%;
   background-color: black;
   width: 284vmax;
   height: 284vmax;
@@ -384,9 +383,38 @@ body {
 /* ------------------ about me ----------------- */  
 
 .about-me {
-  height: 90vh;
+  background-color: black;
+  height: 100%;
 }
 /* ------------------ about me end ----------------- */  
+
+
+
+/* ------------------ portfolio ----------------- */ 
+.portfolio {
+  background-color: black;
+  height: 100%;
+}
+
+/* ------------------ portfolio end ----------------- */ 
+
+/* ------------------ testimonials ----------------- */ 
+.testimonials {
+  background-color: black;
+  height: 100%;
+}
+
+/* ------------------ testimonials end ----------------- */ 
+
+/* ------------------ contact ----------------- */ 
+.contact {
+  background-color: black;
+  height: 100%;
+}
+
+/* ------------------ contact end ----------------- */ 
+
+
 
 /* ------------------ animation ----------------- */  
 
