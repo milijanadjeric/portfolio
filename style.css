@@ -9,6 +9,9 @@
    --roboto: 'Roboto', sans-serif;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 
 .nav {
   display: flex;
@@ -20,6 +23,7 @@
   align-items: center;
   margin-left: 16rem;
   z-index: 999;
+  outline: none;
   
 }
 
@@ -89,9 +93,9 @@
   position: absolute;
   z-index: 10;
   padding: 0;
-  border: 0;
+  border: none;
   background: black;
-  outline: 0;
+  outline:none;
   right: 15px;
   top: 15px;
   cursor: pointer;
@@ -109,7 +113,8 @@
   z-index: 5;
   visibility: hidden;
   margin-left: 0;
-  border: 1px solid #b7935098;
+  border: none;
+  outline: none;
 }
 .nav__item {
   opacity: 0;
@@ -332,12 +337,13 @@ body {
 
   .social-svg-mobile {
     display: flex;
-    display: flex;
     width: 30%;
     height: 70px;
     align-items: flex-end;
     justify-content: space-between;
   }
+
+  
 
 }
 
