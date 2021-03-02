@@ -330,6 +330,15 @@ body {
     
   }
 
+  .social-svg-mobile {
+    display: flex;
+    display: flex;
+    width: 30%;
+    height: 70px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
 }
 
 
