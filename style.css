@@ -32,7 +32,7 @@
   font-weight: 300;
   font-size: 14px;
   color: #00C9B7;
-  border: 1px solid #b7935057;
+  border: 1px solid #b7935098;
   border-radius: 200px;
   
 }
@@ -134,10 +134,11 @@
   border-radius: 200px;
   display: block;
   color: #00C9B7;
-  border: 1px solid #b7935057;
+  border: 1px solid #b7935098;
   text-align: center;
   font-size: 1.25rem;
   text-decoration: none;
+  
   
 }
 .nav__link:hover, .nav__link:focus {
@@ -255,7 +256,7 @@ body {
   overflow: hidden;
   border-radius: 40px;
   box-shadow: 0 15px 11px 0 rgba(0, 0, 0, 0.4), 20px 20px 24px 0 rgba(0, 0, 0, 0.4);
-  border: 1px solid #b7935057;
+  border: 1px solid #b7935086;
   
 }
 
@@ -302,6 +303,11 @@ body {
 
 @media only screen and (max-width: 415px) {
 
+  body {
+    background-color: hsla(0, 0%, 0%, 0.85);
+    
+  }
+
   
   .home {
     height: 100%;
@@ -313,6 +319,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: -30px;
+    
     
   }
   .home-text-big {
@@ -375,7 +382,7 @@ body {
 #Vector_90, #Vector_91, #Vector_92, #Vector_93, #Vector_97, #Vector_98, 
 #Vector_99, #Vector_100, #Vector_101, #Vector_102, #Vector_103 {
   animation-name: stars;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -387,8 +394,9 @@ body {
 
 #Vector-3, #Vector-4, #Vector-5, #Vector-6 {
   animation-name: biggest-stars;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
+  animation-delay: 1s;
 
 }
 
@@ -399,8 +407,9 @@ body {
 
 #Vector_87, #Vector_88, #Vector_89, #Vector_94, #Vector_95, #Vector_96 {
   animation-name: big-stars;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
+  animation-delay: 2s;
   
 
 }
