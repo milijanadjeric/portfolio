@@ -52,7 +52,7 @@ a {
 }
 
 .header {
-  height: 10vh;
+  height: 0.1%;
   background-color:  rgba(0, 0, 0);
   
 }
@@ -278,6 +278,8 @@ body {
 .home-text-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 .home-text {
@@ -299,7 +301,7 @@ body {
 }
 
 .portfolio-animation {
-  margin-top: 70px;
+  margin-top: 130px;
 }
 
 @media only screen and (max-width: 415px) {
@@ -327,7 +329,7 @@ body {
   .portfolio-animation {
     width: 320px;
     height: 320px;
-    margin-top: -100px;
+    margin-top: 0;
     
   }
 
