@@ -421,6 +421,8 @@ button.home-buttons:hover {
 .about-me-leftbox {
   display: flex;
   flex-direction: column;
+  animation-name: moveInTop;
+  animation-duration: 1.5s;
 }
 
 @media only screen and (max-width: 415px) {
