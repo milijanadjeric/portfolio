@@ -275,7 +275,7 @@ body {
   
 }
 
-.home-text-box {
+.home-text-box {  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +292,7 @@ body {
 }
 .home-text-big {
   color: #00C9B7;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: var(--lato);
   font-weight: 300;
   margin: 0;
@@ -323,7 +323,7 @@ body {
     
   }
   .home-text-big {
-    
+    font-size: 4rem;
     text-align: center;
   }
   .portfolio-animation {
@@ -384,6 +384,36 @@ body {
 .about-me {
   background-color: black;
   height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profilna-slika {
+  width: 300px;
+}
+.about-me-text {
+  width: 30rem;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-family: var(--lato);
+  font-weight: 300;
+  letter-spacing: .8px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 415px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .profilna-slika {
+    width: 100px;
+    margin-top: 70px;
+  }
+  .about-me-text {
+    padding: 0 1rem;
+    width: fit-content;
+  }
 }
 /* ------------------ about me end ----------------- */  
 
