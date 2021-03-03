@@ -256,7 +256,7 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 40px;
-  box-shadow: 0 0 65px -2px rgba(0, 0, 0, 0.904);
+  box-shadow: 0 0px 35px -2px rgba(0, 0, 0);
   border: 1px solid #b7935086;
   
 }
@@ -408,11 +408,14 @@ body {
   }
   .profilna-slika {
     width: 100px;
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-bottom: 1rem;
   }
   .about-me-text {
-    padding: 0 1rem;
+    padding: 1rem;
     width: fit-content;
+    overflow: scroll;
+    line-height: 22px;
   }
 }
 /* ------------------ about me end ----------------- */  
