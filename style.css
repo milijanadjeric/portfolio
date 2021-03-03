@@ -44,7 +44,8 @@ a {
   text-decoration: none;
 }
 .nav__item a:hover {
-  color: #ecd7f0;
+  color: whitesmoke;
+  border: 1px solid #b79350d0;
 }
 
 .menuicon__circle {
@@ -280,6 +281,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-name: moveInTop;
+  animation-duration: 3s;
+  
   
 }
 .home-text {
@@ -347,30 +351,28 @@ body {
 
 
 
-.home-buttons {
-  width: 10rem;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  margin-top: 4rem;
-  
-}
 
-.home-buttons button,
-.home-buttons a {
-  padding: 2px 35px;
+
+button.home-buttons {
+  width: 10rem;
+  margin: 0 auto;
+  outline: none;
+  padding: 10px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: .5px;
   background:black;
-  color: #00C9B7;
   border-radius: 200px;
-  border: 1px solid #b7935057;
+  border: 1px solid #b793508a;
+  
+}
+button.home-buttons a {
+  text-decoration: none;
+  color: #00C9B7;
 }
 
-
-.home-buttons button:hover{
+.button.home-buttons:hover{
   cursor: pointer;
   background: linear-gradient(to right,#b34cc575,  #762f83ab);
   color: #ecd7f0;
@@ -390,6 +392,10 @@ body {
 }
 .profilna-slika {
   width: 300px;
+  border: 1px solid #b793508a;
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  
 }
 .about-me-text {
   width: 30rem;
@@ -400,6 +406,11 @@ body {
   letter-spacing: .8px;
   line-height: 20px;
   text-align: justify;
+  margin-top: 3rem;
+}
+.about-me-leftbox {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 415px) {
@@ -409,13 +420,18 @@ body {
   .profilna-slika {
     width: 150px;
     margin-top: 90px;
-    margin-bottom: 1rem;
+    
   }
   .about-me-text {
     padding: 1rem;
     width: fit-content;
     overflow: scroll;
     line-height: 22px;
+    margin-top: 0;
+  }
+
+  button.home-buttons{
+    margin-bottom: 1rem;
   }
 }
 /* ------------------ about me end ----------------- */  
@@ -490,3 +506,15 @@ body {
   to {fill: black;}
 }
 
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
