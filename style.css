@@ -38,14 +38,16 @@ a {
   color: #00C9B7;
   border: 1px solid #b7935098;
   border-radius: 200px;
+  outline: none;
   
 }
 .nav__item a {
   text-decoration: none;
 }
 .nav__item a:hover {
-  color: whitesmoke;
+  color: #26f0df;
   border: 1px solid #b79350d0;
+  
 }
 
 .menuicon__circle {
@@ -62,18 +64,22 @@ a {
   padding: 1.3rem 3rem;
 }
 .social svg{
+  
   padding: 0 1rem;
   
 }
 .social-svg-mobile {
   display: none;
 }
+
+
 #github:hover,
 #facebook:hover
  {
-    fill:whitesmoke;
+    fill:#b79350;
     
 }
+
 
 
 
@@ -148,10 +154,7 @@ a {
   
   
 }
-.nav__link:hover, .nav__link:focus {
-  outline: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
+
 
 .menuicon {
   display: block;
@@ -287,7 +290,7 @@ body {
   
 }
 .home-text {
-  color: #00C9B7;
+  color: #b79350;
   font-size: 2rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -295,7 +298,7 @@ body {
   
 }
 .home-text-big {
-  color: #00C9B7;
+  color: #b79350;
   font-size: 4.5rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -326,7 +329,12 @@ body {
     
     
   }
+
+  .home-text {
+    color: #00C9B7;
+  }
   .home-text-big {
+    color: #00C9B7;
     font-size: 4rem;
     text-align: center;
   }
@@ -338,6 +346,7 @@ body {
   }
 
   .social-svg-mobile {
+    
     display: flex;
     width: 30%;
     height: 70px;
@@ -345,7 +354,7 @@ body {
     justify-content: space-between;
   }
 
-  
+   
 
 }
 
@@ -354,9 +363,10 @@ body {
 
 
 button.home-buttons {
+
   cursor: pointer;
   outline: none;
-  padding: 10px;
+  padding: 5px 20px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -401,14 +411,14 @@ button.home-buttons:hover {
   align-items: center;
 }
 .profilna-slika {
-  width: 300px;
+  width: 200px;
   border: 1px solid #b793508a;
-  margin-bottom: 1rem;
-  margin-top: 5.3rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
   
 }
 .about-me-text {
-  width: 30rem;
+  width: 35%;
   color: whitesmoke;
   font-size: 1rem;
   font-family: var(--lato);
@@ -421,8 +431,11 @@ button.home-buttons:hover {
 .about-me-leftbox {
   display: flex;
   flex-direction: column;
-  animation-name: moveInTop;
+  animation-name: moveInLeft;
   animation-duration: 1.5s;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @media only screen and (max-width: 415px) {
@@ -431,7 +444,8 @@ button.home-buttons:hover {
   }
   .profilna-slika {
     width: 150px;
-    margin-top: 90px;
+    margin-top: 80px;
+    margin-bottom: 1rem;
     
   }
   .about-me-text {
@@ -443,6 +457,7 @@ button.home-buttons:hover {
   }
 
   button.home-buttons{
+    
     margin-bottom: 2rem;
   }
 }
@@ -470,6 +485,16 @@ button.home-buttons:hover {
 .contact {
   background-color: black;
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.contact-animation {
+  width: 450px;
+  margin-top: 7rem;
+  margin-right: 8rem;
 }
 
 /* ------------------ contact end ----------------- */ 
@@ -523,6 +548,19 @@ button.home-buttons:hover {
     opacity: 0;
     -webkit-transform: translateY(5rem);
             transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
   }
   100% {
     opacity: 1;
