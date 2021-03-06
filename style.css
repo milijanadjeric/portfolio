@@ -101,7 +101,7 @@ a {
   z-index: 10;
   padding: 0;
   border: none;
-  background: black;
+  background: transparent;
   outline:none;
   right: 15px;
   top: 15px;
@@ -308,7 +308,7 @@ body {
 }
 
 .portfolio-animation {
-  margin-top: 130px;
+  margin-top: 170px;
 }
 
 @media only screen and (max-width: 415px) {
@@ -474,6 +474,7 @@ button.home-buttons:hover {
   align-items: center;
 }
 .left {
+  
   margin-top: 4.5rem;
   display: flex;
   flex-direction: column;
@@ -483,8 +484,7 @@ button.home-buttons:hover {
 
 .philopolitics {
   width: 14vw;
- 
- 
+   
 }
 .philopolitics:first-child {
   margin-bottom: .5rem;
@@ -571,18 +571,17 @@ a.projects-buttons:hover{
 
 /* ------------------ contact ----------------- */ 
 .contact {
-  background-color: black;
+  background-color: whitesmoke;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   
 }
 
 .contact-animation {
-  width: 450px;
-  margin-top: 7rem;
-  margin-right: 8rem;
+  
+  margin-top: 170px;
 }
 
 /* ------------------ contact end ----------------- */ 
