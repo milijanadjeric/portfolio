@@ -56,7 +56,7 @@ a {
 
 .header {
   height: 0.1%;
-  background-color:  rgba(0, 0, 0);
+  
   
 }
 
@@ -151,8 +151,6 @@ a {
   text-align: center;
   font-size: 1.25rem;
   text-decoration: none;
-  
-  
 }
 
 
@@ -419,7 +417,7 @@ button.home-buttons:hover {
 }
 .about-me-text {
   width: 30vw;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.8);
   font-size: 1rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -494,7 +492,7 @@ button.home-buttons:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 30.5vw;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.8);
   font-size: 1rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -571,19 +569,78 @@ a.projects-buttons:hover{
 
 /* ------------------ contact ----------------- */ 
 .contact {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.95);
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   
 }
 
 .contact-animation {
-  
-  margin-top: 170px;
+  margin-top: 169.9px;
+  margin-right: 4.4rem;
 }
 
+form {
+  margin-top: 4rem;
+  margin-left: 14rem;
+  color: rgba(0, 0, 0, 0.70);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  
+}
+label, input[type=text], input[type=submit], textarea {
+  outline: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .5px;
+
+}
+label, input[type=text] {
+  margin-bottom: .8rem;
+}
+input[type=text], textarea {
+  padding: 0;
+  border:none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  background: transparent;
+}
+input[type=submit] {
+  padding: 5px 30px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  border-radius: 50px;
+  background-color: rgba(255, 166, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
+}
+input[type=submit]:hover {
+  border: 1px solid #b79350d0;
+  background-color: rgb(255, 166, 0);
+  color: rgba(0, 0, 0, 0.90);
+}
+
+@media only screen and (max-width: 415px) {
+  .contact {
+    flex-direction: column-reverse;
+    
+  }
+  .contact-animation {
+    width: 320px;
+    height: 320px;
+    margin-top: 50px;
+  }
+  form {
+    margin-top:0;
+    margin-left: 0;
+    width: 70%;
+    
+  }
+
+}
 /* ------------------ contact end ----------------- */ 
 
 
