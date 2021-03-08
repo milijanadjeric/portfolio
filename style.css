@@ -613,14 +613,14 @@ input[type=submit] {
   padding: 5px 30px;
   margin: 0 auto;
   margin-top: 2rem;
-  border: 1px solid black;
+  border: none;
   border-radius: 50px;
-  background-color: rgba(255, 166, 0, 0.5);
+  background-color: #b79350;
   color: black;
 }
 input[type=submit]:hover {
-  border: 1px solid #b79350d0;
-  background-color: rgb(255, 166, 0);
+  
+  background-color: #b79350e3;
   
 }
 
