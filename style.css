@@ -631,12 +631,12 @@ input[type=submit]:hover {
   }
   .contact-animation {
     width: 320px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 0;
   }
   form {
+    margin-top: -50px;
     overflow: scroll;
-    margin-top:0;
     margin-left: 0;
     width: 70%;
     
@@ -645,8 +645,8 @@ input[type=submit]:hover {
     margin-bottom: .4rem;
   }
   input[type=submit] {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   textarea {
     min-height: 100px !important;
