@@ -504,7 +504,6 @@ a.projects-buttons:hover {
 
   display: block;
   overflow: hidden;
-
   margin: 0;
   padding: 0;
 }
@@ -660,7 +659,7 @@ a.projects-buttons:hover {
 }
 
 .slick-prev {
-  left: 25px;
+  left: 7.5%;
 }
 [dir="rtl"] .slick-prev {
   right: -25px;
@@ -674,7 +673,7 @@ a.projects-buttons:hover {
 }
 
 .slick-next {
-  right: 25px;
+  right: 9%;
 }
 [dir="rtl"] .slick-next {
   right: auto;
@@ -739,7 +738,7 @@ a.projects-buttons:hover {
 }
 .slick-dots li button:before {
   font-family: "slick";
-  font-size: 50px;
+  font-size: 40px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -766,7 +765,14 @@ a.projects-buttons:hover {
 
   .slick-prev,
   .slick-next {
-    top: 114%;
+    top: 180px;
+  }
+  .slick-next {
+    right: 10%;
+  }
+
+  .slick-dots {
+    margin-top: 0;
   }
 
   .slick-dots li {
