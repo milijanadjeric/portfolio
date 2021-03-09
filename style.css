@@ -611,6 +611,7 @@ a.projects-buttons:hover {
 /* Arrows */
 .slick-prev,
 .slick-next {
+  z-index: 999;
   font-size: 0;
   line-height: 0;
   position: absolute;
@@ -776,6 +777,7 @@ a.projects-buttons:hover {
   }
 
   .slick-dots li {
+    margin: 0;
     margin-bottom: 30px;
   }
 }
