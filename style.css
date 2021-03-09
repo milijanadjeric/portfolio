@@ -75,9 +75,9 @@ a {
   }
 
   .nav__toggle {
+    z-index: 9999;
     display: inline-block;
     position: absolute;
-    z-index: 10;
     padding: 0;
     border: none;
     background: transparent;
