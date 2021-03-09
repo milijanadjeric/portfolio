@@ -859,6 +859,7 @@ input[type="submit"]:hover {
     display: none;
   }
   form {
+    overflow: scroll;
     margin-left: 0;
     width: 70%;
   }
