@@ -16,6 +16,7 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  
 }
 .nav__menu {
   display: flex;
@@ -23,6 +24,7 @@ a {
   margin-left: 16rem;
   background: transparent;
   outline: none;
+  z-index: 999;
 }
 
 .nav__link {
@@ -55,6 +57,7 @@ a {
 }
 
 .social {
+  z-index: 999;
   padding: 1.3rem 3rem;
 }
 .social svg {
@@ -410,7 +413,7 @@ button.home-buttons:hover {
   margin-top: 4.5rem;
   width: 14rem;
   border: 1px solid #b793508a;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .philopolitics {
@@ -653,7 +656,7 @@ img.next.slick-arrow.slick-disabled {
   display: block;
   width: 100%;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 30px;
 
   list-style: none;
 
