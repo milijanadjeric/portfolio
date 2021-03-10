@@ -469,6 +469,9 @@ a.projects-buttons:hover {
     margin-bottom: 2rem;
     width: 150px;
   }
+  .left-philopolitics {
+    padding: 0.5rem;
+  }
   .philopolitics {
     width: 150px;
   }
@@ -726,7 +729,7 @@ img.next.slick-arrow.slick-disabled {
   img.previous.slick-arrow,
   img.next.slick-arrow {
     width: 30px;
-    top: 20%;
+    top: 21%;
   }
   img.previous.slick-arrow {
     left: 6.7%;
