@@ -834,7 +834,7 @@ blockquote:after {
   }
 
   blockquote {
-    padding: 0 2rem 0 2rem;
+    padding: 0 1rem 0 1rem;
     width: fit-content;
     line-height: 22px;
     margin-top: 10px;
@@ -878,13 +878,26 @@ form {
 label,
 input[type="text"],
 input[type="submit"],
-textarea {
+textarea,
+.phone {
   outline: none;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.5px;
   color: black;
+}
+
+.phone {
+  text-align: center;
+  padding-top: 2rem;
+  
+}
+.phone a {
+  color: #b79350;
+  font-weight: 400;
+  text-decoration: none;
+  padding-left: 1rem;
 }
 label,
 input[type="text"] {
