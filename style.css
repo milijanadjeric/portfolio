@@ -824,12 +824,29 @@ blockquote:after {
     margin: 0 auto;
   }
 
+  .testimonial-picture-Alex {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  .testimonial-name,
+  .testimonial-title {
+    margin-top: 0.7rem;
+  }
+
   blockquote {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
     width: fit-content;
-    overflow: scroll;
     line-height: 22px;
     margin-top: 10px;
+  }
+
+  blockquote:before {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  blockquote:after {
+    margin-right: 0;
   }
 }
 
