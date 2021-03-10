@@ -413,7 +413,7 @@ button.home-buttons:hover {
   margin-top: 4.5rem;
   width: 14rem;
   border: 1px solid #b793508a;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .philopolitics {
@@ -468,10 +468,12 @@ a.projects-buttons:hover {
     margin: 0 auto;
     margin-bottom: 2rem;
     width: 150px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
   }
   .left-philopolitics {
     padding: 0.5rem;
   }
+  
   .philopolitics {
     width: 150px;
   }
