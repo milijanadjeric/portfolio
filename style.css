@@ -731,7 +731,7 @@ img.next.slick-arrow.slick-disabled {
   img.previous.slick-arrow,
   img.next.slick-arrow {
     width: 30px;
-    top: 21%;
+    top: 160px;
   }
   img.previous.slick-arrow {
     left: 6.7%;
