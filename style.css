@@ -356,7 +356,7 @@ button.home-buttons:hover {
   margin-top: 4rem;
 }
 .about-me-text {
-  width: 30vw;
+  width: 35vw;
   color: rgba(245, 245, 245, 0.8);
   font-size: 1rem;
   font-family: var(--lato);
@@ -932,7 +932,6 @@ input[type="submit"]:hover {
     display: none;
   }
   form {
-    overflow: scroll;
     margin-left: 0;
     width: 70%;
   }
@@ -948,19 +947,12 @@ input[type="submit"]:hover {
 }
 /* ------------------ contact end ----------------- */
 
-/* ------------------ animation ----------------- */
 
-#Vector_90,
-#Vector_91,
-#Vector_92,
-#Vector_93,
-#Vector_97,
-#Vector_98,
-#Vector_99,
-#Vector_100,
-#Vector_101,
-#Vector_102,
-#Vector_103 {
+
+/* ------------------            HOME PAGE ANIMATION           ----------------- */
+
+#Vector_90, #Vector_91, #Vector_92, #Vector_93, #Vector_97, #Vector_98,
+#Vector_99, #Vector_100, #Vector_101, #Vector_102, #Vector_103 {
   animation-name: stars;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -975,10 +967,7 @@ input[type="submit"]:hover {
   }
 }
 
-#Vector-3,
-#Vector-4,
-#Vector-5,
-#Vector-6 {
+#Vector-3, #Vector-4, #Vector-5, #Vector-6 {
   animation-name: biggest-stars;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -994,12 +983,8 @@ input[type="submit"]:hover {
   }
 }
 
-#Vector_87,
-#Vector_88,
-#Vector_89,
-#Vector_94,
-#Vector_95,
-#Vector_96 {
+#Vector_87, #Vector_88, #Vector_89, #Vector_94,
+#Vector_95, #Vector_96 {
   animation-name: big-stars;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -1013,6 +998,9 @@ input[type="submit"]:hover {
     fill: black;
   }
 }
+
+
+/* ------------------            HOME PAGE ANIMATION  END         ----------------- */
 
 @keyframes moveInTop {
   0% {
@@ -1042,4 +1030,38 @@ input[type="submit"]:hover {
 
 /* ------------------ animation end----------------- */
 
+/* ------------------            CONTACT PAGE PAGE ANIMATION           ----------------- */
+
+#Vector_a, #Vector_b, #Vector_e, #Vector_h {
+  animation-name: sun-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes sun-1 {
+  from {
+    
+    fill: #FFBE55;
+  }
+  to {
+    fill: #ffd899;
+  }
+}
+#Vector_c, #Vector_d, #Vector_f, #Vector_g {
+  animation-name: sun-2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  
+
+}
+@keyframes sun-2 {
+  from {
+    
+    fill: #FFBE55;
+  }
+  to {
+    fill: #ffd899;
+  }
+}
 
