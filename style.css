@@ -40,6 +40,11 @@ a {
   border-radius: 200px;
   outline: none;
 }
+
+.nav_link_contact {
+  color: black;
+  border: 1px solid #b79350;
+}
 .nav__item a {
   text-decoration: none;
 }
@@ -782,7 +787,7 @@ blockquote {
 
 .testimonial-name,
 .testimonial-title {
-  color: #00c9b7;
+  color: rgba(245, 245, 245, 0.8);;
 }
 
 blockquote {
@@ -799,15 +804,15 @@ blockquote:before {
   justify-self: flex-start;
   content: "\201C";
   color: rgba(245, 245, 245, 0.8);
-  font-size: 400%;
+  font-size: 300%;
   margin-left: -30px;
 }
 blockquote:after {
   content: "\201C";
   color: rgba(245, 245, 245, 0.8);
-  font-size: 400%;
+  font-size: 300%;
   align-self: flex-end;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-right: -30px;
 }
 
