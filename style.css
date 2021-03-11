@@ -257,14 +257,14 @@ body {
   animation-duration: 1.5s;
 }
 .home-text {
-  color: #b79350;
+  color: #00c9b7;
   font-size: 2rem;
   font-family: var(--lato);
   font-weight: 300;
   margin-bottom: 1rem;
 }
 .home-text-big {
-  color: #b79350;
+  color: #00c9b7;
   font-size: 4.5rem;
   font-family: var(--lato);
   font-weight: 300;
@@ -286,11 +286,7 @@ body {
     margin-top: -30px;
   }
 
-  .home-text {
-    color: #00c9b7;
-  }
   .home-text-big {
-    color: #00c9b7;
     font-size: 4rem;
     text-align: center;
   }
@@ -960,7 +956,7 @@ input[type="submit"]:hover {
 
 @keyframes stars {
   from {
-    fill: #b79350;
+    fill: #ffbb4d;
   }
   to {
     fill: black;
@@ -976,7 +972,7 @@ input[type="submit"]:hover {
 
 @keyframes biggest-stars {
   from {
-    fill: #b79350;
+    fill: #ffbb4d;
   }
   to {
     fill: black;
@@ -992,7 +988,7 @@ input[type="submit"]:hover {
 }
 @keyframes big-stars {
   from {
-    fill: #b79350;
+    fill: #ffbb4d;
   }
   to {
     fill: black;
