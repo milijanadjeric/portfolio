@@ -98,148 +98,7 @@ body {
   fill: #b79350;
 }
 
-@media only screen and (max-width: 415px) {
-  .nav {
-    padding-top: 0;
-  }
-  .nav__toggle {
-    z-index: 9999;
-    display: inline-block;
-    position: absolute;
-    padding: 0;
-    border: none;
-    background: transparent;
-    outline: none;
-    right: 15px;
-    top: 15px;
-    cursor: pointer;
-    border-radius: 0%;
-    transition: black 0.15s linear;
-  }
-  .nav__menu {
-    background: black;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
-    z-index: 5;
-    visibility: hidden;
-    margin-left: 0;
-    border: none;
-    outline: none;
-  }
-  .nav__item {
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
-  }
-  .nav__item:nth-child(1) {
-    transform: translateY(-40px);
-  }
-  .nav__item:nth-child(2) {
-    transform: translateY(-80px);
-  }
-  .nav__item:nth-child(3) {
-    transform: translateY(-120px);
-  }
-  .nav__item:nth-child(4) {
-    transform: translateY(-160px);
-  }
-  .nav__item:nth-child(5) {
-    transform: translateY(-200px);
-  }
-  .nav__link {
-    border-radius: 200px;
-    display: block;
-    color: #00c9b7;
-    border: 1px solid #b7935098;
-    text-align: center;
-    font-size: 1.25rem;
-    text-decoration: none;
-  }
-  .menuicon {
-    display: block;
-    cursor: pointer;
-    color: #b79350;
-    transform: rotate(0deg);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  .menuicon__bar,
-  .menuicon__circle {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 3;
-    stroke-linecap: round;
-  }
-  .menuicon__bar {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-in-out;
-  }
-  .splash {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 1px;
-    height: 1px;
-  }
-  .splash::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: black;
-    width: 284vmax;
-    height: 284vmax;
-    top: -142vmax;
-    left: -142vmax;
-    transform: scale(0);
-    transform-origin: 50% 50%;
-    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    will-change: transform;
-  }
-  .nav:target > .splash::after,
-  .nav--open > .splash::after {
-    transform: scale(1);
-  }
-  .nav:target .menuicon,
-  .nav--open .menuicon {
-    color: #b79350;
-    transform: rotate(180deg);
-  }
-  .nav:target .menuicon__circle,
-  .nav--open .menuicon__circle {
-    stroke-dashoffset: 0;
-  }
-  .nav:target .menuicon__bar:nth-child(1),
-  .nav:target .menuicon__bar:nth-child(4),
-  .nav--open .menuicon__bar:nth-child(1),
-  .nav--open .menuicon__bar:nth-child(4) {
-    opacity: 0;
-  }
-  .nav:target .menuicon__bar:nth-child(2),
-  .nav--open .menuicon__bar:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  .nav:target .menuicon__bar:nth-child(3),
-  .nav--open .menuicon__bar:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  .nav:target .nav__menu,
-  .nav--open .nav__menu {
-    visibility: visible;
-    z-index: 9999;
-  }
-  .nav:target .nav__item,
-  .nav--open .nav__item {
-    opacity: 1;
-    transform: translateY(0);
-    padding: 0 0 2rem 0;
-  }
-  .social {
-    display: none;
-  }
-}
+
 /* ------------------       NAVIGATION  END    ----------------- */
 
 
@@ -278,32 +137,6 @@ body {
   margin-top: 170px;
 }
 
-@media only screen and (max-width: 415px) {
-  .home {
-    flex-direction: column-reverse;
-  }
-  .home-text-box {
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-  }
-  .home-text-big {
-    font-size: 4rem;
-    text-align: center;
-  }
-  .portfolio-animation {
-    width: 320px;
-    height: 320px;
-    margin-top: 0;
-  }
-  .social-svg-mobile {
-    display: flex;
-    width: 30%;
-    height: 70px;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-}
 
 /* ------------------ HOME  PAGE END----------------- */
 
@@ -436,27 +269,6 @@ button.about-me-button:hover {
 }
 
 
-@media only screen and (max-width: 415px) {
-  .about-me {
-    flex-direction: column;
-  }
-  .profile-picture {
-    width: 150px;
-    margin-top: 80px;
-    margin-bottom: 1rem;
-  }
-  .about-me-text {
-    padding: 0 1rem 1rem 1rem;
-    width: fit-content;
-    overflow: scroll;
-    line-height: 22px;
-    margin-top: 0;
-  }
-
-  button.about-me-button {
-    margin-bottom: 2rem;
-  }
-}
 /* ------------------ ABOUT ME PAGE  END ----------------- */
 
 
@@ -489,9 +301,7 @@ button.about-me-button:hover {
 .left {
   margin-right: 7rem;
   margin-top: 4.5rem;
-  width: 14rem;
-  border: 1px solid #b793508a;
-  padding: 0.5rem 0 0 0.5rem;
+  
 }
 .philopolitics {
   width: 14vw;
@@ -536,32 +346,6 @@ a.projects-buttons:hover {
   cursor: pointer;
   color: #26f0df;
   border: 1px solid #b79350d0;
-}
-
-@media only screen and (max-width: 415px) {
-  .left {
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    width: 150px;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-  }
-  .left-philopolitics {
-    padding: 0.5rem;
-  }
-
-  .philopolitics {
-    width: 150px;
-  }
-  .philopolitics-text {
-    padding: 0 1rem 1rem 1rem;
-    width: fit-content;
-    overflow: scroll;
-    line-height: 22px;
-    margin-top: 0;
-  }
-  .projects-buttons {
-    align-self: center;
-  }
 }
 
 /* ------------------  PROJECTS PAGE END ----------------- */
@@ -620,35 +404,6 @@ blockquote:after {
   margin-right: -30px;
 }
 
-@media only screen and (max-width: 415px) {
-  .testimonial-author {
-    margin-top: 0;
-  }
-  .testimonial-picture {
-    margin: 0 auto;
-  }
-  .testimonial-picture-Alex {
-    width: 100px;
-    margin-bottom: 1rem;
-  }
-  .testimonial-name,
-  .testimonial-title {
-    margin-top: 0.7rem;
-  }
-  blockquote {
-    padding: 0 1rem 0 1rem;
-    width: fit-content;
-    line-height: 22px;
-    margin-top: 10px;
-  }
-  blockquote:before {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-  blockquote:after {
-    margin-right: 0;
-  }
-}
 
 /* ------------------ TESTIMONIALS PAGE  END  ----------------- */
 
@@ -718,26 +473,7 @@ input[type="submit"]:hover {
   background-color: #b79350e3;
 }
 
-@media only screen and (max-width: 415px) {
-  .contact {
-    flex-direction: column;
-    height: 100vh;
-  }
-  .contact-animation {
-    display: none;
-  }
-  form {
-    margin-left: 0;
-    width: 70%;
-  }
-  input[type="submit"] {
-    margin-top: 1.5rem;
-  }
-  textarea {
-    min-height: 120px !important;
-    max-height: 120px !important;
-  }
-}
+
 
 /* ------------------ CONTACT PAGE END ----------------- */
 
@@ -1002,8 +738,279 @@ img.next.slick-arrow.slick-disabled {
 
 
 
+/* ------------------ MEDIA QUERIES ----------------- */
+
+
+@media only screen and (max-width: 1440px) {
+  .left {
+    margin-top: 9.5rem;
+  }
+  .philopolitics-text {
+    margin-top: 9rem;
+  }
+  .testimonial-author {
+    margin-top: 9.5rem;
+  }
+  blockquote {
+    margin-top: 9rem;
+  }
+  .contact-animation {
+    margin-right: 1.8rem;
+  }
+}
 
 
 
+@media only screen and (max-width: 415px) {
+  .nav {
+    padding-top: 0;
+  }
+  .nav__toggle {
+    z-index: 9999;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: black 0.15s linear;
+  }
+  .nav__menu {
+    background: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+    margin-left: 0;
+    border: none;
+    outline: none;
+  }
+  .nav__item {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+  }
+  .nav__item:nth-child(1) {
+    transform: translateY(-40px);
+  }
+  .nav__item:nth-child(2) {
+    transform: translateY(-80px);
+  }
+  .nav__item:nth-child(3) {
+    transform: translateY(-120px);
+  }
+  .nav__item:nth-child(4) {
+    transform: translateY(-160px);
+  }
+  .nav__item:nth-child(5) {
+    transform: translateY(-200px);
+  }
+  .nav__link {
+    border-radius: 200px;
+    display: block;
+    color: #00c9b7;
+    border: 1px solid #b7935098;
+    text-align: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  .menuicon {
+    display: block;
+    cursor: pointer;
+    color: #b79350;
+    transform: rotate(0deg);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .menuicon__bar,
+  .menuicon__circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  .menuicon__bar {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-in-out;
+  }
+  .splash {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 1px;
+    height: 1px;
+  }
+  .splash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 284vmax;
+    height: 284vmax;
+    top: -142vmax;
+    left: -142vmax;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    will-change: transform;
+  }
+  .nav:target > .splash::after,
+  .nav--open > .splash::after {
+    transform: scale(1);
+  }
+  .nav:target .menuicon,
+  .nav--open .menuicon {
+    color: #b79350;
+    transform: rotate(180deg);
+  }
+  .nav:target .menuicon__circle,
+  .nav--open .menuicon__circle {
+    stroke-dashoffset: 0;
+  }
+  .nav:target .menuicon__bar:nth-child(1),
+  .nav:target .menuicon__bar:nth-child(4),
+  .nav--open .menuicon__bar:nth-child(1),
+  .nav--open .menuicon__bar:nth-child(4) {
+    opacity: 0;
+  }
+  .nav:target .menuicon__bar:nth-child(2),
+  .nav--open .menuicon__bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .nav:target .menuicon__bar:nth-child(3),
+  .nav--open .menuicon__bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .nav:target .nav__menu,
+  .nav--open .nav__menu {
+    visibility: visible;
+    z-index: 9999;
+  }
+  .nav:target .nav__item,
+  .nav--open .nav__item {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0 0 2rem 0;
+  }
+  .social {
+    display: none;
+  }
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home-text-box {
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+  }
+  .home-text-big {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .portfolio-animation {
+    width: 320px;
+    height: 320px;
+    margin-top: 0;
+  }
+  .social-svg-mobile {
+    display: flex;
+    width: 30%;
+    height: 70px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .about-me {
+    flex-direction: column;
+  }
+  .profile-picture {
+    width: 150px;
+    margin-top: 80px;
+    margin-bottom: 1rem;
+  }
+  .about-me-text {
+    padding: 0 1rem 1rem 1rem;
+    width: fit-content;
+    overflow: scroll;
+    line-height: 22px;
+    margin-top: 0;
+  }
 
+  button.about-me-button {
+    margin-bottom: 2rem;
+  }
+  .left {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 150px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  .left-philopolitics {
+    padding: 0.5rem;
+  }
 
+  .philopolitics {
+    width: 150px;
+  }
+  .philopolitics-text {
+    padding: 0 1rem 1rem 1rem;
+    width: fit-content;
+    overflow: scroll;
+    line-height: 22px;
+    margin-top: 0;
+  }
+  .projects-buttons {
+    align-self: center;
+  }
+  .testimonial-author {
+    margin-top: 0;
+  }
+  .testimonial-picture {
+    margin: 0 auto;
+  }
+  .testimonial-picture-Alex {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  .testimonial-name,
+  .testimonial-title {
+    margin-top: 0.7rem;
+  }
+  blockquote {
+    padding: 0 1rem 0 1rem;
+    width: fit-content;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  blockquote:before {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  blockquote:after {
+    margin-right: 0;
+  }
+  .contact {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .contact-animation {
+    display: none;
+  }
+  form {
+    margin-left: 0;
+    width: 70%;
+  }
+  input[type="submit"] {
+    margin-top: 1.5rem;
+  }
+  textarea {
+    min-height: 120px !important;
+    max-height: 120px !important;
+  }
+}
