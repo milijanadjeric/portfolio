@@ -1032,9 +1032,7 @@ img.next.slick-arrow.slick-disabled {
     margin-bottom: 2rem;
     width: 150px;
   }
-  .left-philopolitics {
-    padding: 0.5rem;
-  }
+  
 
   .philopolitics {
     width: 150px;
@@ -1114,6 +1112,7 @@ img.next.slick-arrow.slick-disabled {
   padding: 0 0 2rem 0;
 }
 }
+
 @media only screen and (max-width: 320px) {
 .nav:target .nav__item,
 .nav--open .nav__item {
