@@ -1031,7 +1031,6 @@ img.next.slick-arrow.slick-disabled {
     margin: 0 auto;
     margin-bottom: 2rem;
     width: 150px;
-    padding: 0.5rem 0.5rem 0 0.5rem;
   }
   .left-philopolitics {
     padding: 0.5rem;
@@ -1098,6 +1097,10 @@ img.next.slick-arrow.slick-disabled {
 }
 
 @media only screen and (max-width: 415px) {
+  .card {
+  width: 85vw;
+  height: 85vh;
+  }
   
 .nav:target .nav__item,
 .nav--open .nav__item {
