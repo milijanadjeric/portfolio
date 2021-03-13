@@ -742,6 +742,8 @@ img.next.slick-arrow.slick-disabled {
 
 
 @media only screen and (max-width: 1440px) {
+
+  
   .left {
     margin-top: 9.5rem;
   }
@@ -758,6 +760,35 @@ img.next.slick-arrow.slick-disabled {
     margin-right: 1.8rem;
   }
 }
+
+@media only screen and (max-width: 1367px) {
+  .nav__menu {
+    margin-left: 12rem;
+  }
+  .home-text-big {
+    font-size: 4rem;
+  }
+  .left {
+    margin-top: 7rem;
+  }
+  .philopolitics-text {
+    margin-top: 4rem;
+  }
+
+  .contact-animation {
+    margin-right:2rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .card {
+    height: 80vh;
+  }
+  .nav__menu {
+    margin-left: 7rem;
+  }
+}
+
+
 
 
 
