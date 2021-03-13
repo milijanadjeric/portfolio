@@ -785,6 +785,7 @@ img.next.slick-arrow.slick-disabled {
     width: 90vw;
     height: 80vh;
   }
+  
   .nav__menu {
     margin-left: 7rem;
   }
@@ -794,8 +795,14 @@ img.next.slick-arrow.slick-disabled {
   blockquote {
     margin-top: 5rem;
   }
+  .contact {
+    overflow: scroll;
+  }
   .contact-animation {
     margin-right: 1.7rem;
+  }
+  form {
+    margin-top: 7rem;
   }
 }
 @media only screen and (max-width: 1024px) {
