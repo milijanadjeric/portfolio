@@ -780,6 +780,9 @@ img.next.slick-arrow.slick-disabled {
   }
 }
 @media only screen and (max-width: 1280px) {
+  body {
+    height: 100%;
+  }
   .card {
     width: 90vw;
     height: 80vh;
@@ -795,6 +798,20 @@ img.next.slick-arrow.slick-disabled {
   }
   .contact-animation {
     margin-right: 1.7rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav__menu {
+    margin-left: 0;
+  }
+  .nav__link {
+    padding: 5px 14px;
+  }
+  .home-text-box {
+    margin-top: 5rem;
+  }
+  .home-text-big {
+    text-align: center;
   }
 }
 
