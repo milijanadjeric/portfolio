@@ -813,10 +813,29 @@ img.next.slick-arrow.slick-disabled {
     padding: 5px 14px;
   }
   .home-text-box {
+    width: 350px;
     margin-top: 5rem;
   }
   .home-text-big {
     text-align: center;
+  }
+  .about-me-text {
+    width: 50vw;
+  }
+  .philopolitics-text {
+    margin-top: 1rem;
+  }
+
+  blockquote {
+    width: 20rem;
+    margin-top: 2rem;
+  }
+
+  form {
+    margin-left: 7rem;
+  }
+  .contact-animation {
+    margin-right: .7rem;
   }
 }
 
