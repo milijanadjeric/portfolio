@@ -787,6 +787,15 @@ img.next.slick-arrow.slick-disabled {
   .nav__menu {
     margin-left: 7rem;
   }
+  .testimonial-author {
+    margin-top: 6rem;
+  }
+  blockquote {
+    margin-top: 5rem;
+  }
+  .contact-animation {
+    margin-right: 1.7rem;
+  }
 }
 
 
