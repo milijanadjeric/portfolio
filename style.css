@@ -579,7 +579,7 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 800px) {
   .slick-initialized .slick-slide {
     flex-direction: column;
   }
@@ -708,7 +708,7 @@ img.next.slick-arrow.slick-disabled {
   color: #dbac55;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 800px) {
   .slick-slide {
     margin-top: 5rem;
   }
@@ -843,7 +843,7 @@ img.next.slick-arrow.slick-disabled {
 
 
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 800px) {
   .nav {
     padding-top: 0;
   }
