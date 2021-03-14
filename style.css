@@ -1186,13 +1186,13 @@ input[type="submit"] {
 
 @media only screen and (min-width: 1920px) {
   .nav__menu {
-    margin-left: 30rem;
+    margin-left: 25rem;
   }
   .home-text-box {
     margin-right: 5rem;
   }
   .about-me-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 25px;
   }
   button.about-me-button {
