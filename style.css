@@ -1189,6 +1189,17 @@ input[type="submit"] {
   .home-text-box {
     margin-right: 5rem;
   }
+  .about-me-text {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  button.about-me-button {
+    font-size: 18px;
+  }
+  .social svg {
+    width: 80px;
+    height: 40px;
+  }
 }
 
   
