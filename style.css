@@ -1195,7 +1195,7 @@ input[type="submit"] {
   }
   .nav__link {
     margin: 0 2.5rem;
-    padding: 6px 24px;
+    padding: 6px 27px;
   }
   .home-text-box {
     margin-right: 5rem;
@@ -1206,7 +1206,7 @@ input[type="submit"] {
   }
   button.about-me-button {
     font-size: 18px;
-    padding: 6px 24px;
+    padding: 6px 27px;
   }
   .social svg {
     width: 80px;
@@ -1224,7 +1224,7 @@ input[type="submit"] {
   }
   .projects-buttons {
     font-size: 18px;
-    padding: 6px 24px;
+    padding: 6px 27px;
   }
 }
 
