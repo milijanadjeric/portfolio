@@ -1191,7 +1191,7 @@ input[type="submit"] {
 
 @media only screen and (min-width: 1920px) {
   .nav__menu {
-    margin-left: 25rem;
+    margin-left: 24rem;
   }
   .nav__link {
     margin: 0 2.5rem;
@@ -1214,12 +1214,16 @@ input[type="submit"] {
   }
   .left {
     margin-top: 7.5rem;
+    margin-right: 9rem;
   }
   .philopolitics-text {
     font-size: 1.3rem;
     line-height: 25px;
     margin-top: 7rem;
 
+  }
+  .projects-buttons {
+    font-size: 18px;
   }
 }
 
