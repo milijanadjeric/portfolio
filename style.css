@@ -1193,6 +1193,10 @@ input[type="submit"] {
   .nav__menu {
     margin-left: 25rem;
   }
+  .nav__link {
+    margin: 0 2.5rem;
+    padding: 5px 20px;
+  }
   .home-text-box {
     margin-right: 5rem;
   }
