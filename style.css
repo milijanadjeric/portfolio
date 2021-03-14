@@ -1206,10 +1206,20 @@ input[type="submit"] {
   }
   button.about-me-button {
     font-size: 18px;
+    padding: 5px 20px;
   }
   .social svg {
     width: 80px;
     height: 40px;
+  }
+  .left {
+    margin-top: 7.5rem;
+  }
+  .philopolitics-text {
+    font-size: 1.3rem;
+    line-height: 25px;
+    margin-top: 7rem;
+
   }
 }
 
