@@ -1226,6 +1226,10 @@ input[type="submit"] {
     font-size: 18px;
     padding: 6px 28px;
   }
+
+  blockquote {
+    font-size: 1.3rem;
+  }
 }
 
   
