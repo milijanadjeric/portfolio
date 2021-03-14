@@ -1191,11 +1191,11 @@ input[type="submit"] {
 
 @media only screen and (min-width: 1920px) {
   .nav__menu {
-    margin-left: 24rem;
+    margin-left: 23rem;
   }
   .nav__link {
     margin: 0 2.5rem;
-    padding: 5px 20px;
+    padding: 7px 22px;
   }
   .home-text-box {
     margin-right: 5rem;
@@ -1206,7 +1206,7 @@ input[type="submit"] {
   }
   button.about-me-button {
     font-size: 18px;
-    padding: 5px 20px;
+    padding: 7px 22px;
   }
   .social svg {
     width: 80px;
@@ -1224,6 +1224,7 @@ input[type="submit"] {
   }
   .projects-buttons {
     font-size: 18px;
+    padding: 7px 22px;
   }
 }
 
