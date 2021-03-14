@@ -93,6 +93,9 @@ body {
   width: 60px;
   
 }
+.social a {
+  outline: none;
+}
 .social-svg-mobile {
   display: none;
 }
@@ -1005,12 +1008,14 @@ img.next.slick-arrow.slick-disabled {
     margin-top: 0;
   }
   .social-svg-mobile {
-    outline: none;
     display: flex;
     width: 30%;
     height: 70px;
     align-items: flex-end;
     justify-content: space-between;
+  }
+  .social-svg-mobile a {
+    outline: none;
   }
   .about-me {
     flex-direction: column;
