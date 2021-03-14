@@ -1231,6 +1231,14 @@ input[type="submit"] {
     font-size: 1.3rem;
     line-height: 25px;
   }
+  label,
+  input[type="text"],
+  input[type="submit"],
+  textarea,
+  .phone {
+    font-size: 18px;
+  }
+  
 
   .contact-animation {
     margin-right: 7.8rem;
