@@ -1231,6 +1231,9 @@ input[type="submit"] {
     font-size: 1.3rem;
     line-height: 25px;
   }
+  form {
+    margin-left: 16rem;
+  }
   label,
   input[type="text"],
   input[type="submit"],
