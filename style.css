@@ -89,6 +89,7 @@ body {
   padding: 1.3rem 3rem;
 }
 .social svg {
+  outline: none;
   width: 60px;
   
 }
@@ -1004,6 +1005,7 @@ img.next.slick-arrow.slick-disabled {
     margin-top: 0;
   }
   .social-svg-mobile {
+    outline: none;
     display: flex;
     width: 30%;
     height: 70px;
