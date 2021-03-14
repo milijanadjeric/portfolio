@@ -1238,6 +1238,9 @@ input[type="submit"] {
   .phone {
     font-size: 18px;
   }
+  input[type="submit"] {
+    padding: 5px 38px;
+  }
   
 
   .contact-animation {
