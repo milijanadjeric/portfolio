@@ -1231,7 +1231,10 @@ input[type="submit"] {
     padding: 6px 28px;
   }
   .testimonial-author {
-    margin-top: 13rem;
+    margin-top: 12rem;
+  }
+  .testimonial-picture {
+    margin-right: 10rem;
   }
   .testimonial-name,
   .testimonial-title {
