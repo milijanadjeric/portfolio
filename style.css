@@ -780,9 +780,13 @@ img.next.slick-arrow.slick-disabled {
   .philopolitics-text {
     margin-top: 4rem;
   }
+  .portfolio-animation {
+    height: 500px;
+  }
 
   .contact-animation {
     margin-right:2rem;
+    height: 500px;
   }
 }
 @media only screen and (max-width: 1280px) {
