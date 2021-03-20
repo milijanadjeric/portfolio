@@ -1217,13 +1217,13 @@ input[type="submit"] {
     height: 40px;
   }
   .left {
-    margin-top: 11.5rem;
+    margin-top: 7.5rem;
     margin-right: 9rem;
   }
   .philopolitics-text {
     font-size: 1.3rem;
     line-height: 25px;
-    margin-top: 11rem;
+    margin-top: 7rem;
 
   }
   .projects-buttons {
@@ -1231,7 +1231,7 @@ input[type="submit"] {
     padding: 6px 28px;
   }
   .testimonial-author {
-    margin-top: 15rem;
+    margin-top: 13rem;
   }
   .testimonial-name,
   .testimonial-title {
@@ -1241,7 +1241,7 @@ input[type="submit"] {
   blockquote {
     font-size: 1.3rem;
     line-height: 25px;
-    margin-top: 11rem;
+    margin-top: 7rem;
   }
   form {
     margin-left: 16rem;
