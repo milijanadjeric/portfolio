@@ -1213,23 +1213,31 @@ input[type="submit"] {
     height: 40px;
   }
   .left {
-    margin-top: 7.5rem;
+    margin-top: 11.5rem;
     margin-right: 9rem;
   }
   .philopolitics-text {
     font-size: 1.3rem;
     line-height: 25px;
-    margin-top: 7rem;
+    margin-top: 11rem;
 
   }
   .projects-buttons {
     font-size: 18px;
     padding: 6px 28px;
   }
+  .testimonial-author {
+    margin-top: 15rem;
+  }
+  .testimonial-name,
+  .testimonial-title {
+    font-size: 1.3rem;
+  }
 
   blockquote {
     font-size: 1.3rem;
     line-height: 25px;
+    margin-top: 11rem;
   }
   form {
     margin-left: 16rem;
