@@ -508,8 +508,8 @@ textarea,
   letter-spacing: 0.5px;
   color: black;
   -webkit-appearance: none;
-  border: none;
-  -webkit-border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 .phone {
   text-align: center;
