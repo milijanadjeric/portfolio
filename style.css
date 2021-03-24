@@ -827,6 +827,10 @@ img.next.slick-arrow.slick-disabled {
   blockquote {
     margin-top: 5rem;
   }
+
+  .slick-slide {
+    margin-top: 7rem;
+  }
   .contact {
     overflow: scroll;
   }
