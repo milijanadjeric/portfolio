@@ -856,12 +856,24 @@ img.next.slick-arrow.slick-disabled {
     margin-top: 5rem;
   }
   .philopolitics-text {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+  }
+  .left {
+    margin-right: 3rem;
+  }
+  .testimonial-picture {
+    margin-right: 3rem;
+  }
+  img.next.slick-arrow {
+    right: 4%;
+  }
+  img.previous.slick-arrow {
+    left: 4%;
   }
 
   blockquote {
-    width: 20rem;
-    margin-top: 2rem;
+    width: 30rem;
+    margin-top: 2.5rem;
   }
 
   form {
