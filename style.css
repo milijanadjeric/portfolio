@@ -1159,8 +1159,10 @@ img.next.slick-arrow.slick-disabled {
   .testimonial-picture {
     margin: 0 auto;
   }
-  .testimonial-picture-Alex {
+  .testimonial-picture-Alex,
+  .testimonial-picture-Jova {
     width: 100px;
+    height: 100px;
     margin-bottom: 1rem;
   }
   
