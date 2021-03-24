@@ -16,7 +16,6 @@ html,
   -moz-box-sizing: inherit;
 }
 
-
 a {
   -webkit-tap-highlight-color: transparent;
 }
@@ -37,7 +36,6 @@ body {
   box-shadow: 0 0px 35px -2px rgba(0, 0, 0);
   border: 1px solid #b7935086;
 }
-
 
 
 /* ------------------       NAVIGATION    ----------------- */
@@ -122,8 +120,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation-name: moveInTop;
-  animation-duration: 2.5s;
+  -webkit-animation-name: moveInTop;
+          animation-name: moveInTop;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 .home-text {
   color: #00c9b7;
@@ -148,15 +148,24 @@ body {
 
 /* ------------------            HOME PAGE ANIMATIONS          ----------------- */
 
-@keyframes moveInTop {
+@-webkit-keyframes moveInTop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(5rem);
     transform: translateY(5rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
@@ -164,9 +173,21 @@ body {
 #Vector_90, #Vector_91, #Vector_92, #Vector_93,
 #Vector_97, #Vector_98, #Vector_99, #Vector_100,
 #Vector_101, #Vector_102, #Vector_103 {
-  animation-name: stars;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: stars;
+          animation-name: stars;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes stars {
+  from {
+    fill: #ffbb4d;
+  }
+  to {
+    fill: black;
+  }
 }
 
 @keyframes stars {
@@ -179,10 +200,23 @@ body {
 }
 
 #Vector-3, #Vector-4, #Vector-5, #Vector-6 {
-  animation-name: biggest-stars;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
+  -webkit-animation-name: biggest-stars;
+          animation-name: biggest-stars;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes biggest-stars {
+  from {
+    fill: #ffbb4d;
+  }
+  to {
+    fill: black;
+  }
 }
 
 @keyframes biggest-stars {
@@ -196,10 +230,22 @@ body {
 
 #Vector_87, #Vector_88, #Vector_89,
 #Vector_94, #Vector_95, #Vector_96 {
-  animation-name: big-stars;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
+  -webkit-animation-name: big-stars;
+          animation-name: big-stars;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes big-stars {
+  from {
+    fill: #ffbb4d;
+  }
+  to {
+    fill: black;
+  }
 }
 @keyframes big-stars {
   from {
@@ -242,8 +288,10 @@ body {
 .about-me-leftbox {
   display: flex;
   flex-direction: column;
-  animation-name: moveInLeft;
-  animation-duration: 1.5s;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   justify-content: center;
   align-items: center;
 }
@@ -280,15 +328,24 @@ button.about-me-button:hover {
 
 /* ------------------ ABOUT ME PAGE ANIMATION ----------------- */
 
-@keyframes moveInLeft {
+@-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10rem);
     transform: translateX(10rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
@@ -362,7 +419,7 @@ a.projects-buttons:hover {
   height: 100%;
 }
 .testimonial-author {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 .testimonial-picture {
   margin-right: 7rem;
@@ -370,6 +427,12 @@ a.projects-buttons:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.testimonial-picture-Jova {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
 }
 .testimonial-name,
 .testimonial-title,
@@ -444,6 +507,9 @@ textarea,
   font-size: 14px;
   letter-spacing: 0.5px;
   color: black;
+  -webkit-appearance: none;
+  border: none;
+  -webkit-border: none;
 }
 .phone {
   text-align: center;
@@ -472,6 +538,7 @@ input[type="submit"] {
   margin-top: 2rem;
   border: none;
   border-radius: 50px;
+  -webkit-border-radius: 50px;
   background-color: #b79350;
   color: black;
 }
@@ -487,9 +554,21 @@ input[type="submit"]:hover {
 
 #Vector_a, #Vector_b, #Vector_e, #Vector_h, #Vector_c,
 #Vector_d, #Vector_f, #Vector_g  {
-  animation-name: sun;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: sun;
+          animation-name: sun;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sun {
+  from {
+    fill: #ffbe55;
+  }
+  to {
+    fill: #ffd899;
+  }
 }
 
 @keyframes sun {
@@ -515,7 +594,6 @@ input[type="submit"]:hover {
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -535,10 +613,6 @@ input[type="submit"]:hover {
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .slick-track {
@@ -561,7 +635,7 @@ input[type="submit"]:hover {
   visibility: hidden;
 }
 .slick-slide {
-  margin-top: 7rem;
+  margin-top: 5rem;
   outline: none;
   display: none;
   float: left;
@@ -620,8 +694,6 @@ input[type="submit"]:hover {
   width: 30px;
   height: 30px;
   padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
@@ -714,28 +786,6 @@ img.next.slick-arrow.slick-disabled {
   color: #dbac55;
 }
 
-@media only screen and (max-width: 800px) {
-  .slick-slide {
-    margin-top: 5rem;
-  }
-  img.previous.slick-arrow,
-  img.next.slick-arrow {
-    width: 30px;
-    top: 160px;
-  }
-  img.previous.slick-arrow {
-    left: 6.7%;
-  }
-  img.next.slick-arrow {
-    right: 5%;
-  }
-  .slick-dots {
-    margin-top: 0;
-  }
-  .slick-dots li {
-    margin-bottom: 30px;
-  }
-}
 
 /* ------------------ SLICK SLIDER END ----------------- */
 
@@ -1070,6 +1120,8 @@ img.next.slick-arrow.slick-disabled {
   }
   .about-me-text {
     padding: 0 1rem 1rem 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     overflow: scroll;
     line-height: 22px;
@@ -1091,6 +1143,8 @@ img.next.slick-arrow.slick-disabled {
   }
   .philopolitics-text {
     padding: 0 1rem 1rem 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     overflow: scroll;
     line-height: 22px;
@@ -1109,12 +1163,15 @@ img.next.slick-arrow.slick-disabled {
     width: 100px;
     margin-bottom: 1rem;
   }
+  
   .testimonial-name,
   .testimonial-title {
     margin-top: 0.7rem;
   }
   blockquote {
     padding: 0 1rem 0 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     line-height: 22px;
     margin-top: 10px;
@@ -1143,6 +1200,27 @@ img.next.slick-arrow.slick-disabled {
   textarea {
     min-height: 120px !important;
     max-height: 120px !important;
+  }
+
+  .slick-slide {
+    margin-top: 5rem;
+  }
+  img.previous.slick-arrow,
+  img.next.slick-arrow {
+    width: 30px;
+    top: 160px;
+  }
+  img.previous.slick-arrow {
+    left: 6.7%;
+  }
+  img.next.slick-arrow {
+    right: 5%;
+  }
+  .slick-dots {
+    margin-top: 0;
+  }
+  .slick-dots li {
+    margin-bottom: 30px;
   }
 }
 
