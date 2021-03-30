@@ -1,3 +1,3 @@
 # portfolio
 
-https://milijanadjeric.github.io/portfolio/
+https://milijanadjeric.com
