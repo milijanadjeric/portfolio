@@ -38,3 +38,50 @@ nav.addEventListener('keydown', e => {
     }
   }
 });
+
+
+
+
+//CONTACT FORM VALIDATION - ONEMOGUCAVANJE SUBMITOVANJA FORME BEZ PRETHODNO POPUNJENIH SVIH TRAZENIH POLJA
+
+
+function validateForm() {
+
+  let x=document.forms["myForm"]["name"].value;
+  let y=document.forms["myForm"]["email"].value;
+  let z=document.forms["myForm"]["message"].value;
+  let emailID = document.myForm.email.value;
+  atpos = emailID.indexOf("@");
+  dotpos = emailID.lastIndexOf(".");
+  
+  
+
+  if (x==null || x=="")
+    {
+    alert("name must be filled out");
+    return false;
+    }
+    if (y==null || y=="")
+    {                                             
+    alert("email must be filled out");
+    return false;
+    }
+    if (z==null || z=="")
+    {
+    alert("message must be filled out");
+    return false;
+    }
+
+    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+      alert("Please enter correct email")
+      document.myForm.email.focus() ;
+      return false;
+   }
+      return( true );
+
+    
+   
+}
+
+  //   + u <form> u contact.html kucamo sledece:    name="myForm" onsubmit="return validateForm()
+

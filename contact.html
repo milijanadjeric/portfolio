@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Milijana Djeric</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Milijana Djeric is a self-taught front-end developer. This is her portfolio website">
+  <meta name="keywords" content="Milijana Djeric, web developer, web-development, front-end, self-taught">
+  <meta name="author" content="Milijana Djeric">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,6 +16,8 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+
+
 <body>
 <!-- partial:index.partial.html -->
 <div class="card">
@@ -33,6 +39,7 @@
       
       <!-- ACTUAL NAVIGATION MENU -->
       <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+        <li class="nav__item"><a href="index.html" class="nav__link nav_link_contact">Home</a></li>
         <li class="nav__item"><a href="about-me.html" class="nav__link nav_link_contact">About me</a></li>
         <li class="nav__item"><a href="projects.html" class="nav__link nav_link_contact">Projects</a></li>
         <li class="nav__item"><a href="testimonials.html" class="nav__link nav_link_contact">Testimonials</a></li>
@@ -74,9 +81,9 @@
   
   </header>
 
-  <section  class="contact">
+  <section class="contact">
 
-    <form action="contact-form.php" method="post">
+    <form action="mail.php" method="post" name="myForm" onsubmit="return validateForm()">
       <label for="name">Name or nickname</label>
       <input type="text" id="name" name="name" placeholder="">
       <label for="email">E-mail</label>
@@ -219,6 +226,7 @@
 
 
 <script  src="script.js"></script>
+
 </body>
 
 </html>
