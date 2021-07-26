@@ -73,11 +73,11 @@ function validateForm() {
     }
 
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
-      alert("Please enter correct email")
-      document.myForm.email.focus() ;
-      return false;
+    alert("Please enter correct email")
+    document.myForm.email.focus() ;
+    return false;
    }
-      return( true );
+    return( true );
 
     
    
